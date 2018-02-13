@@ -16,23 +16,23 @@ with open(sys.argv[1], 'rb') as input_file:
     except (OSError, IOError) as e:
         print("Invalid image: {}".format(e))
 
-    qr_file = BytesIO()
     success = False
     # try versions 1 to 40, smaller first
     for version in range(1, 41):
         try:
-            qr_object = pyqrcode.create(sys.argv[2], error='H', version=9)
+            qr_object = pyqrcode.create(sys.argv[2], error='H', version=version)
         except ValueError:
             print("data payload too small (version {})".format(version))
             continue
+        qr_file = BytesIO()
         # TODO: fix quiet zone overshoot problem
         qr_object.png(qr_file, quiet_zone=1)
-        # TODO: error handling in case qr code generation fails
+        # TODO: error handling in case qr-code generation fails
         qr_image = Image.open(qr_file)
         qr_image.load()
 
         # try input image on every position on qr-code
-        print("trying to fit version {}".format(version))
+        print("trying to fit in version {}".format(version))
         qr_width, qr_height = qr_image.size
         input_width, input_height = input_image.size
         for x in range(qr_width - input_width):

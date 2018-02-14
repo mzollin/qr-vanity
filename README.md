@@ -1,11 +1,11 @@
 # qr-vanity
 <p>
-  <img alt="example logo"src="example.png" align="left" width="220" height="220">
+  <img alt="example logo"src="example.png" align="left" width="110" height="110">
   <b>Automatically embedding pixel art in QR-codes.</b><br>
   <a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
   <a href="https://pyup.io/repos/github/mzollin/qr-vanity"><img alt="Updates" src="https://pyup.io/repos/github/mzollin/qr-vanity/shield.svg"></a>
   <a href="https://pyup.io/repos/github/mzollin/qr-vanity"><img alt="Python3" src="https://pyup.io/repos/github/mzollin/qr-vanity/python-3-shield.svg"></a>
-<p><br><br><br><br><br><br>
+<p>
 
 ## Setup and usage:
 - sudo apt install python3-dev python3-setuptools python3-pip libzbar0 libzbar-dev

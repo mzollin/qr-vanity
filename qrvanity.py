@@ -18,7 +18,7 @@ with open(sys.argv[1], 'rb') as input_file:
 
     success = False
     # try versions 1 to 40, smaller first
-    for version in range(1, 41):
+    for version in range(9, 41):
         try:
             qr_object = pyqrcode.create(sys.argv[2], error='H', version=version)
         except ValueError:

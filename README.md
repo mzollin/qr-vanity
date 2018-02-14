@@ -6,7 +6,7 @@ Automatically embedding pixel art in QR-codes.
 - pip3 install -r requirements.txt
 
 **usage:** ./qrvanity.py input.png "encoded message"<br>
-**output:** output.png<br>
+**output:** one or multiple output.png<br>
 **input format:** Small black and white binary image (no grayscales)<br>
 **advice:** Use transparent pixels where you don't care (outside the main motive if it has non-rectangular borders). It will then occupy less data modules (QR-code pixels) and the resulting QR-code will be smaller. Drawing a white border around black motives will improve visibility, because it keeps black data modules away. The tool may often generate QR-codes that are not strictly valid according to specifications but can nevertheless be read by most QR-code readers.
 

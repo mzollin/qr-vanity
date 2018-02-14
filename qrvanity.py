@@ -49,6 +49,7 @@ with open(sys.argv[1], 'rb') as input_file:
                 for qrcode in (qr_readback or []):
                     qrcode = qrcode.decode('ascii', errors='replace')
                     if qrcode == sys.argv[2]:
+                        output_image = output_image.resize((4*qr_width, 4*qr_height), Image.LANCZOS)
                         output_image.save('output_{}_{}.png'.format(x, y))
                         success = True
         if success:

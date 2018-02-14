@@ -5,7 +5,7 @@
   <a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
   <a href="https://pyup.io/repos/github/mzollin/qr-vanity"><img alt="Updates" src="https://pyup.io/repos/github/mzollin/qr-vanity/shield.svg"></a>
   <a href="https://pyup.io/repos/github/mzollin/qr-vanity"><img alt="Python3" src="https://pyup.io/repos/github/mzollin/qr-vanity/python-3-shield.svg"></a>
-<p><br>
+<p><br><br>
 
 ## Setup and usage:
 - sudo apt install python3-dev python3-setuptools python3-pip libzbar0 libzbar-dev

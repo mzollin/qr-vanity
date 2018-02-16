@@ -26,7 +26,7 @@ with open(sys.argv[1], 'rb') as input_file:
             continue
         qr_file = BytesIO()
         # TODO: fix quiet zone overshoot problem
-        qr_object.png(qr_file, quiet_zone=4)
+        qr_object.png(qr_file, quiet_zone=1)
         # TODO: error handling in case qr-code generation fails
         qr_image = Image.open(qr_file)
         qr_image.load()

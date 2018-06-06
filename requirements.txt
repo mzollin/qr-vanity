@@ -2,4 +2,4 @@ Pillow==5.1.0
 pkg-resources==0.0.0
 pypng==0.0.18
 PyQRCode==1.2.1
-zbarlight==2.0
+zbarlight==2.1

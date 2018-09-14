@@ -10,7 +10,7 @@ import zbarlight
 import sys
 
 with open(sys.argv[1], 'rb') as input_file:
-    input_image = Image.open(input_file)
+    input_image = Image.open(input_file).convert("RGBA")
     try:
         input_image.load()
     except (OSError, IOError) as e:

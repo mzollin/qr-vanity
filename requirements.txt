@@ -1,4 +1,4 @@
 Pillow==5.4.0
-pypng==0.0.18
+pypng==0.0.19
 PyQRCode==1.2.1
 zbarlight==2.1
